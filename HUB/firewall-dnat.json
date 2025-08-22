@@ -1,0 +1,15 @@
+[{
+    "name": "testrule",
+    "source_addresses": [
+        "10.0.0.0/16"
+    ],
+    "destination_ports": [
+        "53"
+    ],
+    "translated_port": 53,
+    "translated_address": "8.8.8.8",
+    "protocols": [
+        "TCP",
+        "UDP"
+    ]
+}]

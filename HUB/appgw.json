@@ -1,0 +1,40 @@
+{
+  "backend_address_pools": [
+    {
+      "name": "backendpool1",
+      "fqdns":""
+    },
+    {
+      "name": "backendpool2",
+      "fqdns":""
+    }
+  ],
+  "backend_http_settings": [
+    {
+      "name": "httpSetting1",
+      "cookie_based_affinity": "Disabled",
+      "path": "/path1/",
+      "port": 80,
+      "protocol": "Http",
+      "request_timeout": 60
+    }
+  ],
+  "http_listeners": [
+    {
+      "name": "listener1",
+      "frontend_ip_configuration_name": "frontendIP1",
+      "frontend_port_name": "frontendPort1",
+      "protocol": "Http"
+    }
+  ],
+  "request_routing_rules": [
+    {
+      "name": "rule1",
+      "priority": 9,
+      "rule_type": "Basic",
+      "http_listener_name": "listener1",
+      "backend_address_pool_name": "backendpool1",
+      "backend_http_settings_name": "httpSetting1"
+    }
+  ]
+}

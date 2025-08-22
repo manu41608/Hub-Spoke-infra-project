@@ -1,0 +1,15 @@
+[{
+    "name": "testrule",
+    "source_addresses": [
+        "10.0.0.0/16"
+    ],
+    "target_fqdns": [
+        "*.google.com"
+    ],
+    "protocol": [
+        {
+            "port": "443",
+            "type": "Https"
+        }
+    ]
+}]
